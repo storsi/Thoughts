@@ -1,17 +1,34 @@
+const sceltaStato = document.getElementById("sceltaStato")
+const parConsiderazione = document.getElementById("considerazioni")
+
 document.addEventListener('DOMContentLoaded', () => {
     let url = 'dati.xml'
     fetch(url).then(response=>response.text()).then(data=> {
         let parser = new DOMParser()
         let xml = parser.parseFromString(data, 'application/xml')
-        prendiGiochi(xml)
+        prendiInfo(xml)
     })
 })
 
-function prendiGiochi(x) {
-    let div = document.getElementById("div")
-    let giochi = x.getElementsByTagName("gioco")
+let stati, considerazioni
 
-    for(i = 0; i < giochi.length; i++) {
-        div.innerText += giochi[i].firstChild.nodeValue + " "
+function prendiInfo(x) {
+    stati = x.getElementsByTagName("stato")
+    considerazioni = x.getElementsByTagName("considerazione")
+
+    popolaSelect()
+    setConsiderazione(0)
+}
+
+function popolaSelect() {
+
+    for(i = 0; i < stati.length; i++) {
+        var option = document.createElement("option")
+        option.text = stati[i].firstChild.nodeValue
+        sceltaStato.add(option)
     }
+}
+
+function setConsiderazione(indice) {
+    parConsiderazione.innerText = considerazioni[indice].firstChild.nodeValue
 }

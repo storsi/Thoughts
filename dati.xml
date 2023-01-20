@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalogo>
-    <gioco>R6s</gioco>
-    <gioco>God of war</gioco>
-</catalogo>
+<situazioneEcologica>
+    <statiIAE>
+        <stato>ITALIA</stato>
+        <stato>GERMANIA</stato>
+        <stato>FRANCIA</stato>
+        <stato>SPAGNA</stato>
+        <stato>GRAN BRETAGNA</stato>
+    </statiIAE>
+    <considerazioneStato>
+        <considerazione emissioniTot="5.4" emissioniPC="5.4">
+            Il governo italiano ha posto l'energia e il clima al centro della sua agenda politica. Il piano nazionale per l'energia e il clima ha fissato obiettivi molto ambiziosi per le rinnovabili entro il 2030; con l'obiettivo di raggiungere il 30% del consumo totale di energia e il 55% della produzione di elettricità.
+        </considerazione>
+    </considerazioneStato>
+</situazioneEcologica>
