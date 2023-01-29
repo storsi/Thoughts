@@ -8,11 +8,116 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="titolo">
-        <p class="titoloGenerale">SITUAZIONE ECOLOGICA IN</p>
-        <select id="sceltaStato"></select>
+    <p class="titoloGenerale"></p>
+    <select id="sceltaStato" onchange="setInfoStato()"></select>
+
+    <p id="considerazioni"></p>
+    <table id="tabella"></table>
+
+    <p class="titoloSecondario">FONTI RINNOVABILI<sup>*</sup>:</p>
+
+    <div id="divFontiRinnovabili">
+
+        <div class="fonteRinnovabile">
+
+            <div class="overlay">
+                <p class="spiegazione">ENERGIA EOLICA</p>
+                <div class="info">
+                    <table class="tabellaDati"></table>
+                </div>
+                <div class="info">
+                    <table class="tabellaDati%"></table>
+                </div>
+            </div>
+
+            <img src="https://www.altroconsumo.it/-/media/altroconsumo/images/home/casa%20e%20energia/energia%20rinnovabile/energia-eolica-800x450.jpg?rev=cf57fcb0-fcb9-464a-b9b7-c2b2249a3eb5&hash=50912461FDF9A21865996EEE1F7EF220" alt="Energia Eolica">
+        </div>
+
+        <div class="fonteRinnovabile">
+
+            <div class="overlay">
+                <p class="spiegazione">ENERGIA SOLARE</p>
+                <div class="info">
+                    <table class="tabellaDati"><tr><th>GW prodotti annui</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+                <div class="info">
+                    <table class="tabellaDati%"><tr><th>% sul totale</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+            </div>
+
+            <img src="https://www.edison.it/sites/default/files/onoff-image/Edison_strani%20ma%20sostenibili_ON_OFF%20social%20article.png" alt="Energia Solare">
+        </div>
+
+        <div class="fonteRinnovabile">
+
+            <div class="overlay">
+                <p class="spiegazione">ENERGIA GEOTERMICA</p>
+                <div class="info">
+                    <table class="tabellaDati"><tr><th>GW prodotti annui</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+                <div class="info">
+                    <table class="tabellaDati%"><tr><th>% sul totale</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+            </div>
+
+            <img src="https://www.enelgreenpower.com/content/dam/enel-egp/immagini/learning-hub/energia-geotermica/ITALIA_2400x1160.jpg" alt="Energia Geotermica">
+        </div>
+
+        <div class="fonteRinnovabile">
+
+            <div class="overlay">
+                <p class="spiegazione">ENERGIA IDROELETTRICA</p>
+                <div class="info">
+                    <table class="tabellaDati"><tr><th>GW prodotti annui</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+                <div class="info">
+                    <table class="tabellaDati%"><tr><th>% sul totale</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+            </div>
+
+            <img src="https://quifinanza.it/wp-content/uploads/sites/5/2021/02/energia-idroelettrica.jpg" alt="Energia Idroelettrica">
+        </div>
+
+        <div class="fonteRinnovabile">
+
+            <div class="overlay">
+                <p class="spiegazione">ENERGIA NUCLEARE</p>
+                <div class="info">
+                    <table class="tabellaDati"><tr><th>GW prodotti annui</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+                <div class="info">
+                    <table class="tabellaDati%"><tr><th>% sul totale</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+            </div>
+
+            <img src="https://www.infobuildenergia.it/wp-content/uploads/2021/12/nucleare-per-la-transizione-energetica.jpg" alt="Energia Nucleare">
+        </div>
+
+        <div class="fonteRinnovabile">
+
+            <div class="overlay">
+                <p class="spiegazione">RICICLAGGIO</p>
+                <div class="info">
+                    <table class="tabellaDati"><tr><th>Tonnellate rifiuti</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+                <div class="info">
+                    <table class="tabellaDati%"><tr><th>% sul totale</th></tr><tr><td>34GW</td></tr></table>
+                </div>
+            </div>
+
+            <img src="https://www.buycircular.it/wp-content/uploads/2021/01/shutterstock_600755237-1024x692.jpg" alt="Riciclo">
+        </div>
     </div>
-    <p id="considerazioni">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+    <p class="precisazioni"><sup>*</sup>I dati non sono accurati o corretti a causa delle diverse fonti utilizzate</p>
+    <footer>
+        <img src="https://www.assolombardaservizi.it/wp-content/uploads/2021/05/iStock-508135150.jpg" alt="Ecologico">
+        <div id="tuttiGliStatiDiv"><p class="infoPaginaP" style="font-size: 3vh; text-align: center;margin-top: .7%;">STATI:</p><br></div>
+        <div class="infoPaginaDiv">
+            <p class="infoPaginaP" style="font-size: 3vh; text-align: center;margin-top: .7%;margin-bottom: 10%;">INFO:</p>
+            <p>Fonti: <a href="https://www.iea.org/" target="_blank">IEA</a> e dal Web</p>
+            <p>Codice: <a href="https://github.com/storsi/Es-XML.git" target="_blank">GITHUB</a></p>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

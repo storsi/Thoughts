@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <situazioneEcologica>
+
+
     <statiIAE>
         <stato>ITALIA</stato>
         <stato>GERMANIA</stato>
         <stato>FRANCIA</stato>
         <stato>SPAGNA</stato>
         <stato>GRAN BRETAGNA</stato>
+        <stato>GENERALE</stato>
     </statiIAE>
+
+
     <considerazioneStato>
-        <considerazione emissioniTot="5.4" emissioniPC="5.4">
+        <!--ITALIA-->
+        <considerazione emissioniPC="5.4t" foreste="38%">
             Il governo italiano ha posto l'energia e il clima al centro della sua agenda politica. Il piano nazionale per l'energia e il clima ha fissato obiettivi molto ambiziosi per le rinnovabili entro il 2030; con l'obiettivo di raggiungere il 30% del consumo totale di energia e il 55% della produzione di elettricità.
         </considerazione>
+        <!--GERMANIA-->
+        <considerazione emissioniPC="8.1t" foreste="32.8%">
+            Alla fine del 2010, la Germania ha avviato l'Energiewende, un importante piano per rendere più efficiente il proprio sistema energetico, alimentato principalmente da fonti energetiche rinnovabili. Il paese ha adottato una strategia per un percorso energetico fino al 2050, che include un'eliminazione graduale accelerata dell'energia nucleare entro il 2022.
+        </considerazione>
+        <!--FRANCIA-->
+        <considerazione emissioniPC="4.6t" foreste="32.1%">
+            La Francia ha un mix elettrico a bassissime emissioni di carbonio grazie alla sua grande flotta nucleare, la seconda più grande dopo gli Stati Uniti. In qualità di leader nella definizione di un'ambiziosa transizione energetica, la Francia ha legiferato un obiettivo di emissioni nette pari a zero per il 2050 nella sua legge sull'energia e il clima del 2019. Una strategia nazionale per le basse emissioni di carbonio con budget di carbonio quinquennali e un piano pluriennale per gli investimenti energetici completano l'obiettivo a lungo termine.
+        </considerazione>
+        <!--SPAGNA-->
+        <considerazione emissioniPC="5.09t" foreste="55.4%">
+            La Spagna negli ultimi anni ha superato una situazione in cui le tariffe elettriche non coprivano i costi del sistema e ha chiuso tutte le sue miniere di carbone, consentendole di dare priorità alle questioni relative al cambiamento climatico e allineare i suoi obiettivi con gli obiettivi e le ambizioni dell'UE.
+        </considerazione>
+        <!--GRAN BRETAGNA-->
+        <considerazione emissioniPC="5t" foreste="13.1%">
+            Il Regno Unito è un leader globale nella decarbonizzazione con un obiettivo netto zero entro il 2050 e budget di carbonio quinquennali e un piano per ridurre le emissioni di gas serra in tutta l'economia di almeno il 68% entro il 2030, rispetto ai livelli del 1990. Basandosi sui punti di forza del Regno Unito, la tecnologia energetica e l'innovazione sono al centro della politica di decarbonizzazione.
+        </considerazione>
+        <!--MONDO-->
+        <considerazione emissioniPC="2.8t" foreste="31%">
+            L'analisi dell'IAE dà forma alle politiche per consentire al mondo di raggiungere gli obiettivi in ​​materia di clima, accesso all'energia e qualità dell'aria, mantenendo una forte attenzione all'affidabilità e alla convenienza dell'energia per tutti
+        </considerazione>
     </considerazioneStato>
+
+
+    <datiEcologici>
+        <!--ITALIA-->
+        <datoStato enEolica="15,3.85" enSolare="20,4.03" enGeotermica="6,0.92" enIdroelettrica="48.8,7.52" enNucleare="0,0" riciclo="23.53M,79"/>
+        <!--GERMANIA-->
+        <datoStato enEolica="113.5,23.1" enSolare="48.45,9.9" enGeotermica="1.2,0.2" enIdroelettrica="19.4,4" enNucleare="65.37,13.3" riciclo="22.29M,44"/>
+        <!--FRANCIA-->
+        <datoStato enEolica="34.1,6.34" enSolare="11.6,2.16" enGeotermica="10.7,2" enIdroelettrica="60,11.16" enNucleare="379.5,70.58" riciclo="12.17,32.9"/>
+        <!--SPAGNA?-->
+        <datoStato enEolica="60.46,23.3" enSolare="25.56,10" enGeotermica="0,0" enIdroelettrica="10,3.85" enNucleare="55.9,21.54" riciclo="9.77M,43.3"/>
+        <!--GRAN BRETAGNA-->
+        <datoStato enEolica="71.2,23" enSolare="13,4.1" enGeotermica="87,27.43" enIdroelettrica="134,46.58" enNucleare="46,16.1" riciclo="12M,45"/>
+        <!--MONDO-->
+        <datoStato enEolica="1870,7.04" enSolare="1002.9,3.78" enGeotermica="557.16,2.1" enIdroelettrica="4250,16.01" enNucleare="2653,10" riciclo="267.8M,19"/>
+    </datiEcologici>
 </situazioneEcologica>

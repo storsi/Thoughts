@@ -4,9 +4,48 @@
     user-select: none;
 }
 
-.titolo {
-    width: 100%;
+td {
     text-align: center;
+    font-size: 3vh;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 190, 0);
+    position: relative;
+}
+
+footer > img {
+    width: 20%;
+    border-radius: 20px;
+    margin: .7%;
+}
+
+#tuttiGliStatiDiv {
+    margin-left: 5%;
+    vertical-align:top;
+    height: auto;
+    max-width: 55%;
+    display: inline-block;
+}
+
+.tuttiGliStati {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.tuttiGliStati > li {
+    width: 8%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    list-style: none;
+}
+
+.tuttiGliStati > li > a {
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    font-size: 2vh;
 }
 
 .titoloGenerale {
@@ -15,20 +54,20 @@
     font-weight: 900;
     margin-top: 3%;
     color: rgb(0, 190, 0);
-    display: inline-block;
 }
 
 #sceltaStato {
     width: auto;
-    height: 7vh;
+    height: 5vh;
     text-align: center;
     font-weight: 200;
-    font-size: 5vh;
-    margin-left: .5%;
+    font-size: 3vh;
+    margin-left: 5%;
     color: white;
     background-color: rgb(0, 190, 0);
     appearance: none;
     cursor: pointer;
+    display: block;
 }
 
 #considerazioni {
@@ -37,4 +76,120 @@
     word-wrap: break-word;
     margin-left: 10%;
     margin-top: 10%;
+    display: inline-block;
+}
+
+#tabella {
+    width: 30%;
+    height: 10vh;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    border: 1px solid;
+    color: white;
+    background-color: rgb(0, 149, 255);
+}
+
+.titoloSecondario {
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 600;
+    color: rgb(0, 190, 0);
+    margin-top: 10%;
+}
+
+#divFontiRinnovabili {
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.fonteRinnovabile {
+    display: inline-block;
+    width: 40%;
+    height: 30vh;
+    margin: 4%;
+    position: relative;
+}
+
+.fonteRinnovabile > img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+.overlay {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.spiegazione {
+    text-align: center;
+    font-size: 4vh;
+    color: white;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    display: none;
+}
+
+.info {
+    width: 30%;
+    height: 15vh;
+    margin-left: 13%;
+    background-color: rgb(0, 149, 255);
+    border-radius: 20px;
+    display: none;
+}
+
+.tuttiGliStati > li > a:hover {
+    text-decoration: underline;
+    color:rgb(0, 149, 255);
+}
+
+.fonteRinnovabile:hover .overlay{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.fonteRinnovabile:hover .info {
+    display: inline-block;
+}
+.fonteRinnovabile:hover .spiegazione {
+    display: block;
+}
+
+.info > table{
+    width: 100%;
+    height: 80%;
+    color: white;
+    text-align: center;
+}
+
+.precisazioni {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.infoPaginaDiv {
+    vertical-align: top;
+    width: 13%;
+    position: absolute;
+    top: .7%;
+    left: 87%;
+}
+
+.infoPaginaDiv > p {
+    font-size: 2vh;
+    color:rgb(57, 57, 57);
+}
+
+.infoPaginaDiv > p > a {
+    color:rgb(57, 57, 57);
+    text-decoration: none;
 }
