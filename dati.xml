@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<situazioneEcologica>
-
-
-    <statiIAE>
+<situazioneEcologica
+    xmlns:xs="statoIAE"
+    xmlns:xcs="considerazioneStato">
+    <xs:stato>
         <stato>ITALIA</stato>
         <stato>GERMANIA</stato>
         <stato>FRANCIA</stato>
         <stato>SPAGNA</stato>
         <stato>GRAN BRETAGNA</stato>
         <stato>GENERALE</stato>
-    </statiIAE>
+    </xs:stato>
 
 
-    <considerazioneStato>
+    <xcs:stato>
         <!--ITALIA-->
         <considerazione emissioniPC="5.4t" foreste="38%">
             Il governo italiano ha posto l'energia e il clima al centro della sua agenda politica. Il piano nazionale per l'energia e il clima ha fissato obiettivi molto ambiziosi per le rinnovabili entro il 2030; con l'obiettivo di raggiungere il 30% del consumo totale di energia e il 55% della produzione di elettricità.
@@ -37,7 +37,7 @@
         <considerazione emissioniPC="2.8t" foreste="31%">
             L'analisi dell'IAE dà forma alle politiche per consentire al mondo di raggiungere gli obiettivi in ​​materia di clima, accesso all'energia e qualità dell'aria, mantenendo una forte attenzione all'affidabilità e alla convenienza dell'energia per tutti
         </considerazione>
-    </considerazioneStato>
+    </xcs:stato>
 
 
     <datiEcologici>
